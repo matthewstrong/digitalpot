@@ -44,7 +44,7 @@ uint8_t str_to_uint8(char* str, int len)
     for (int i = 0; i < len; ++i)
         res = res * 10 + str[i] - '0';
  
-  	// Handle overflow and set result
+    // Handle overflow and set result
     res = min(res, 255);
     res = max(res, 0);
       
